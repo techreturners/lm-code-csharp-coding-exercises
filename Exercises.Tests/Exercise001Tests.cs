@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Exercises.Tests
 {
-    public class Tests
+    public class Exercise001Tests
     {
         private Exercise001 Exercise001;
 
