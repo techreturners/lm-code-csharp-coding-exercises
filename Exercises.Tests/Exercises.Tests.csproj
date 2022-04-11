@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\csharp_coding_exercises\Exercises.csproj" />
+    <ProjectReference Include="..\Exercises\Exercises.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="FluentAssertions" />
