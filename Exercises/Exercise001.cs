@@ -6,13 +6,13 @@ namespace Exercises
 {
     public class Exercise001
     {
-        public String CapitalizeWord(String word)
+        public string CapitalizeWord(string word)
         {
             // Replace the exception statement below with your code!
             throw new NotImplementedException();
         }
 
-        public String GenerateInitials(String firstName, String lastName)
+        public string GenerateInitials(string firstName, string lastName)
         {
             // Replace the exception statement below with your code!
             throw new NotImplementedException();
@@ -24,7 +24,7 @@ namespace Exercises
             throw new NotImplementedException();
         }
 
-        public String Reverse(String sentence)
+        public string Reverse(string sentence)
         {
             // Replace the exception statement below with your code!
             throw new NotImplementedException();
