@@ -48,7 +48,7 @@ namespace Exercises.Tests
             // Please uncomment the code below to run your test
 
             //Person p2 = new Person("Susan", "Farmer", "Leeds", 18);
-            //Exercise002.CanWatchFilm(p1, 15).Should().Be(true);
+            //Exercise002.CanWatchFilm(p2, 15).Should().Be(true);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 In this set of exercises we're going to explore the creation of your own objects.
 
-You'll see a number of tests in [Exercise002Test.cs](../Exercises.Tests/Exercise002Test.cs)
+You'll see a number of tests in [Exercise002Test.cs](../Exercises.Tests/Exercise002Tests.cs)
 
 You'll be required to create C# objects (classes) to represent a "Person".
 
