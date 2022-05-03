@@ -8,7 +8,7 @@ namespace Exercises
         public bool IsPangram(string input)
         {
             // Replace the exception statement below with your code!
-            //throw new NotImplementedException();
+            
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
             return alphabet.All(input.ToLower().Contains);
 
