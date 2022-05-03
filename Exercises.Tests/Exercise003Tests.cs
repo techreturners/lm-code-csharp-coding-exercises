@@ -14,19 +14,10 @@ namespace Exercises.Tests
         }
 
         [Test]
-        public void Given_Chocolate_Chip_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        public void Given_Pistachio_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
         {
-            string iceCreamFlavour = "Mint Chocolate Chip";
-            int expectedCode = 3;
-
-            Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
-        }
-
-        [Test]
-        public void Given_Mango_Sorbet_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
-        {
-            string iceCreamFlavour = "Mango Sorbet";
-            int expectedCode = 5;
+            string iceCreamFlavour = "Pistachio";
+            int expectedCode = 0;
 
             Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
         }
@@ -36,6 +27,42 @@ namespace Exercises.Tests
         {
             string iceCreamFlavour = "Raspberry Ripple";
             int expectedCode = 1;
+
+            Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
+        }
+
+        [Test]
+        public void Given_Vanilla_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        {
+            string iceCreamFlavour = "Vanilla";
+            int expectedCode = 2;
+
+            Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
+        }
+
+        [Test]
+        public void Given_Mint_Chocolate_Chip_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        {
+            string iceCreamFlavour = "Mint Chocolate Chip";
+            int expectedCode = 3;
+
+            Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
+        }
+
+        [Test]
+        public void Given_Chocolate_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        {
+            string iceCreamFlavour = "Chocolate";
+            int expectedCode = 4;
+
+            Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
+        }
+
+        [Test]
+        public void Given_Mango_Sorbet_GetIceCreamCode_Should_Return_Correct_Ice_Cream_Code()
+        {
+            string iceCreamFlavour = "Mango Sorbet";
+            int expectedCode = 5;
 
             Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
         }
