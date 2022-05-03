@@ -45,13 +45,13 @@ namespace Exercises.Tests
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterX_Sentence()
         {
-            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(true);
+            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(false);
         }
 
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterH_Sentence()
         {
-            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(true);
+            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(false);
         }
 
         [Test]
@@ -64,6 +64,36 @@ namespace Exercises.Tests
         public void IsPangram_Should_Return_True_For_Pangram_With_Numbers()
         {
             Exercise005.IsPangram("the 1 quick brown fox jumps over the 2 lazy dogs").Should().Be(true);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_NonPangram()
+        {
+            Exercise005.IsPangram("Good Morning").Should().Be(false);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_NonPangram_With_Underscores()
+        {
+            Exercise005.IsPangram("Good_Morning_").Should().Be(false);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_Just_Numbers()
+        {
+            Exercise005.IsPangram("128390478967239842").Should().Be(false);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_Just_Emojies()
+        {
+            Exercise005.IsPangram("🏡👋😄📘").Should().Be(false);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_True_For_Pangram_With_Emojies()
+        {
+            Exercise005.IsPangram("the quick brown fox🦊 jumps over the lazy dog🐕").Should().Be(true);
         }
     }
 }
