@@ -17,38 +17,30 @@ namespace Exercises.Tests
         [Test]
         public void IsFromManchester_Should_Return_True_If_Person_Is_From_Manchester()
         {
-            // Please uncomment the code below to run your test
-
-            //Person p1 = new Person("Peter", "Smith", "Manchester", 23);
-            //Exercise002.IsFromManchester(p1).Should().Be(true);
+            Person p1 = new Person("Peter", "Smith", "Manchester", 23);
+            Exercise002.IsFromManchester(p1).Should().Be(true);
         }
 
         [Test]
         public void IsFromManchester_Should_Return_False_If_Person_Is_Not_From_Manchester()
         {
-            // Please uncomment the code below to run your test
-
-            //Person p2 = new Person("Susan", "Farmer", "Leeds", 23);
-            //Exercise002.IsFromManchester(p2).Should().Be(false);
+            Person p2 = new Person("Susan", "Farmer", "Leeds", 23);
+            Exercise002.IsFromManchester(p2).Should().Be(false);
         }
 
 
         [Test]
         public void CanWatchFilm_Should_Return_False_If_Age_Is_Below_The_Age_Limit()
         {
-            // Please uncomment the code below to run your test
-
-            //Person p1 = new Person("Peter", "Smith", "Manchester", 17);
-            //Exercise002.IsFromManchester(p1, 18).Should().Be(false);
+            Person p1 = new Person("Peter", "Smith", "Manchester", 17);
+            Exercise002.CanWatchFilm(p1, 18).Should().Be(false);
         }
 
         [Test]
         public void CanWatchFilm_Should_Return_True_If_Age_Is_EqualTo_Or_Above_The_Age_Limit()
         {
-            // Please uncomment the code below to run your test
-
-            //Person p2 = new Person("Susan", "Farmer", "Leeds", 18);
-            //Exercise002.CanWatchFilm(p2, 15).Should().Be(true);
+            Person p2 = new Person("Susan", "Farmer", "Leeds", 18);
+            Exercise002.CanWatchFilm(p2, 15).Should().Be(true);
         }
     }
 }
