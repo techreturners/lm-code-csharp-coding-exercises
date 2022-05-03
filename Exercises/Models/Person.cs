@@ -2,8 +2,8 @@
 {
     public class Person
     {
-        public string fname;
-        public string lname;
+        private string fname;
+        private string lname;
         public string city;
         public int age;
 
