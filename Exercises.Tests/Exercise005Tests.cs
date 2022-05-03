@@ -45,13 +45,15 @@ namespace Exercises.Tests
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterX_Sentence()
         {
-            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(true);
+            //It was true but it should be FALSE; missing "x"
+            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(false);
         }
 
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterH_Sentence()
         {
-            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(true);
+            //It was true but it should be FALSE; missing "h"
+            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(false);
         }
 
         [Test]

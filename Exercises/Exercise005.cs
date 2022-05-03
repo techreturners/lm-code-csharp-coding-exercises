@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace Exercises
 {
     public class Exercise005
@@ -6,7 +8,10 @@ namespace Exercises
         public bool IsPangram(string input)
         {
             // Replace the exception statement below with your code!
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            string alphabet = "abcdefghijklmnopqrstuvwxyz";
+            return alphabet.All(input.ToLower().Contains);
+
         }
     }
 }
