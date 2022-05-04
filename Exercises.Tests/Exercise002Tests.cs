@@ -39,7 +39,7 @@ namespace Exercises.Tests
             // Please uncomment the code below to run your test
 
             //Person p1 = new Person("Peter", "Smith", "Manchester", 17);
-            //Exercise002.IsFromManchester(p1, 18).Should().Be(false);
+            //Exercise002.CanWatchFilm(p1, 18).Should().Be(false);
         }
 
         [Test]
