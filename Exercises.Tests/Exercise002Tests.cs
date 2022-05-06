@@ -19,8 +19,8 @@ namespace Exercises.Tests
         {
             // Please uncomment the code below to run your test
 
-            //Person p1 = new Person("Peter", "Smith", "Manchester", 23);
-            //Exercise002.IsFromManchester(p1).Should().Be(true);
+            Person p1 = new Person("Peter", "Smith", "Manchester", 23);
+            Exercise002.IsFromManchester(p1).Should().Be(true);
         }
 
         [Test]
@@ -28,8 +28,8 @@ namespace Exercises.Tests
         {
             // Please uncomment the code below to run your test
 
-            //Person p2 = new Person("Susan", "Farmer", "Leeds", 23);
-            //Exercise002.IsFromManchester(p2).Should().Be(false);
+            Person p2 = new Person("Susan", "Farmer", "Leeds", 23);
+            Exercise002.IsFromManchester(p2).Should().Be(false);
         }
 
 
@@ -38,8 +38,8 @@ namespace Exercises.Tests
         {
             // Please uncomment the code below to run your test
 
-            //Person p1 = new Person("Peter", "Smith", "Manchester", 17);
-            //Exercise002.IsFromManchester(p1, 18).Should().Be(false);
+            Person p1 = new Person("Peter", "Smith", "Manchester", 17);
+            Exercise002.CanWatchFilm(p1, 18).Should().Be(false);
         }
 
         [Test]
@@ -47,8 +47,8 @@ namespace Exercises.Tests
         {
             // Please uncomment the code below to run your test
 
-            //Person p2 = new Person("Susan", "Farmer", "Leeds", 18);
-            //Exercise002.CanWatchFilm(p2, 15).Should().Be(true);
+            Person p2 = new Person("Susan", "Farmer", "Leeds", 18);
+            Exercise002.CanWatchFilm(p2, 15).Should().Be(true);
         }
     }
 }
