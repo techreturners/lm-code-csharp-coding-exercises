@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using FluentAssertions;
 using System;
+using System.Globalization;
 
 namespace Exercises.Tests
 {
@@ -13,7 +14,7 @@ namespace Exercises.Tests
             DateTime expectedResult = new(2053, 3, 27, 1, 46, 40);
             actualResult.Should().Be(expectedResult);
         }
-
+        
         [Test]
         public void AddGigaSecond_Should_Return_Result_When_DateTime_Is_Specified()
         {
@@ -21,7 +22,7 @@ namespace Exercises.Tests
             DateTime expectedResult = new(2052, 11, 11, 1, 8, 40);
             actualResult.Should().Be(expectedResult);
         }
-
+        
         [Test]
         public void AddGigaSecond_Should_Return_Result_When_DateTime_Is_Specified_With_Day_RollOver()
         {

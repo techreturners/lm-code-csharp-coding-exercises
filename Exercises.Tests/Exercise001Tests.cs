@@ -2,6 +2,7 @@
 using FluentAssertions;
 using Exercises.Models;
 using System.Collections.Generic;
+using System;
 
 namespace Exercises.Tests
 {
@@ -26,8 +27,8 @@ namespace Exercises.Tests
         [Test]
         public void GenerateInitials_Should_Return_Correct_Initials()
         {
-            Exercise001.GenerateInitials("Frederic", "Bonneville").Should().Be("F.B");
-            Exercise001.GenerateInitials("James", "Bond").Should().Be("J.B");
+           Exercise001.GenerateInitials("Frederic", "Bonneville").Should().Be("F.B");
+           Exercise001.GenerateInitials("James", "Bond").Should().Be("J.B");
         }
 
         [Test]
@@ -36,12 +37,13 @@ namespace Exercises.Tests
             Exercise001.AddVat(100, 20).Should().Be(120);
             Exercise001.AddVat(40, 17.5).Should().Be(47);
             Exercise001.AddVat(33.5, 17.5).Should().Be(39.36);
-            Exercise001.AddVat(25, 0).Should().Be(25);
+            Exercise001.AddVat(25.0, 0).Should().Be(25);
         }
+
 
         [Test]
         public void Reverse_Should_Return_Correctly_Reversed_String()
-        {
+        {          
             Exercise001.Reverse("foo").Should().Be("oof");
             Exercise001.Reverse("why would you even want to do this?").Should().Be("?siht od ot tnaw neve uoy dluow yhw");
         }
@@ -51,6 +53,7 @@ namespace Exercises.Tests
         {
             // This is using the latest C# language features
             // This is the same as doing User u1 = new User("Heather", "Windows 10", "Windows");
+
             User u1 = new("Heather", "Windows 10", "Windows");
             User u2 = new("Paul", "Windows 95", "Windows");
 

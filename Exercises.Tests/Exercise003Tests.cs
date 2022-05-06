@@ -39,13 +39,14 @@ namespace Exercises.Tests
 
             Exercise003.IceCreamCode(iceCreamFlavour).Should().Be(expectedCode);
         }
-
+        
         [Test]
         public void Ice_Cream_Flavours_Should_Return_All_Flavours()
         {
             string[] expected = { "Pistachio", "Raspberry Ripple", "Vanilla", "Mint Chocolate Chip", "Chocolate", "Mango Sorbet" };
 
-            Exercise003.IceCreamFlavours.Should().Equal(expected);
+            Exercise003.IceCreamFlavours().Should().Equal(expected);
         }
+        
     }
 }

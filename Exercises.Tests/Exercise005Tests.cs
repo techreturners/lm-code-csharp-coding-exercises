@@ -19,6 +19,12 @@ namespace Exercises.Tests
         }
 
         [Test]
+        public void IsPangram_Should_Return_False_For_Non_Letter_String()
+        {
+            Exercise005.IsPangram("_ 8 ").Should().Be(false);
+        }
+
+        [Test]
         public void IsPangram_Should_Return_True_For_Perfect_LowerCase_Pangram()
         {
             Exercise005.IsPangram("abcdefghijklmnopqrstuvwxyz").Should().Be(true);
@@ -45,13 +51,13 @@ namespace Exercises.Tests
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterX_Sentence()
         {
-            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(true);
+            Exercise005.IsPangram("the quick brown fo jumps over the lazy dog").Should().Be(false);
         }
 
         [Test]
         public void IsPangram_Should_Return_False_For_Missing_LetterH_Sentence()
         {
-            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(true);
+            Exercise005.IsPangram("five boxing wizards jump quickly at it").Should().Be(false);
         }
 
         [Test]
@@ -64,6 +70,12 @@ namespace Exercises.Tests
         public void IsPangram_Should_Return_True_For_Pangram_With_Numbers()
         {
             Exercise005.IsPangram("the 1 quick brown fox jumps over the 2 lazy dogs").Should().Be(true);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_True_For_Pangram_a_from_pangrampangram()
+        {
+            Exercise005.IsPangram("Jim quickly realized that the beautiful gowns are expensive.").Should().Be(true);
         }
     }
 }
