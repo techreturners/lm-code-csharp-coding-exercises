@@ -14,6 +14,14 @@ Remember to break down problems to help you solve them and that Google is your f
 
 ### Instructions
 
+In short, there are FIVE sets of exercises and your job is to make all of the accompanying tests pass for each exercise.
+
+_Note that some exercises require you to enable the tests yourself._
+
+Each set of exercises has accompanying detailed instructions in the `/docs` folder. Once you've followed the setup instructions below you can read [the specific instructions for Exercise001](./docs/Exercise001.md).
+
+### Prerequisites
+
 To complete these exercises you will need .NET 6+ installed on your computer.
 
 Follow this link to download and install .NET 6+ for your laptop:
@@ -47,7 +55,7 @@ Work through each test 1 by 1 until you have them all passing. Initially, you'll
 ```csharp
 dotnet test --filter Exercise001
 ```
-    
+
 Or to run a single test within a test file you can run dotnet test --filter FunctionName like so:
 
 ```csharp
@@ -56,5 +64,6 @@ dotnet test --filter CapitalizeWord
 
 # The Exercises
 
-Before starting on each exercise, please read through the information in the [docs](./docs).
-You can see the first exercise in [Exercise001.cs](./Exercises/Exercise001.cs).
+Before starting on each exercise, please read through the information in the docs for that exercise.
+
+Start by reading [the specific instructions for Exercise001](./docs/Exercise001.md).

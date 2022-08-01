@@ -4,10 +4,10 @@ This set of C# challenges introduce exercises for working with the C# syntax.
 
 It includes:
 
-* Methods, variable definitions and data types
-* Conditionals
-* Looping
-* Initial review of C# objects
+-   Methods, variable definitions and data types
+-   Conditionals
+-   Looping
+-   Initial review of C# objects
 
 In the [Exercise001Test.cs](../Exercises.Tests/Exercise001Tests.cs) file you'll find the tests - work through each test and implement the corresponding function within the [Exercise001.cs](../Exercises/Exercise001.cs) file.
 
@@ -35,4 +35,14 @@ Or to run a single test within a test file you can run dotnet test --filter Func
 dotnet test --filter CapitalizeWord
 ```
 
-Happy coding! 
+Happy coding!
+
+## Extra Challenge
+
+In the `AddVAT` function you can see that there's an extra challenge available. If you look in the `Exercise001Tests.cs` file you will find one test with the lines commented out.
+
+👉 Uncomment these lines and make this test pass too.
+
+## Once you're done
+
+Time to move onto [the instructions for Exercise002](./docs/Exercise002.md).
