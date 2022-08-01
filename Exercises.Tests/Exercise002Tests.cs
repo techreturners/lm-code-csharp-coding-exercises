@@ -32,6 +32,12 @@ namespace Exercises.Tests
             //Exercise002.IsFromManchester(p2).Should().Be(false);
         }
 
+        [Test]
+        public void IsFromManchester_Should_Return_False_If_Person_Is_Null()
+        {
+            // Please uncomment the code below to run your test
+            // Exercise002.IsFromManchester(null).Should().Be(false);
+        }
 
         [Test]
         public void CanWatchFilm_Should_Return_False_If_Age_Is_Below_The_Age_Limit()
