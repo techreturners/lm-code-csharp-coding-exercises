@@ -23,4 +23,4 @@ You'll need to look at the methods and tests and update accordingly.
 
 ## Once you're done
 
-Time to move onto [the instructions for Exercise003](./docs/Exercise003.md).
+Time to move onto [the instructions for Exercise003](./Exercise003.md).

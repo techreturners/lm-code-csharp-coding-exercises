@@ -45,4 +45,4 @@ In the `AddVAT` function you can see that there's an extra challenge available. 
 
 ## Once you're done
 
-Time to move onto [the instructions for Exercise002](./docs/Exercise002.md).
+Time to move onto [the instructions for Exercise002](./Exercise002.md).

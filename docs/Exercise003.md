@@ -28,4 +28,4 @@ Add additional unit tests to [Exercise003Tests.cs](../Exercises.Tests/Exercise00
 
 ## Once you're done
 
-Time to move onto [the instructions for Exercise004](./docs/Exercise004.md).
+Time to move onto [the instructions for Exercise004](./Exercise004.md).

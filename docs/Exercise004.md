@@ -22,4 +22,4 @@ This exercise is inspired by the following source:
 
 ## Once you're done
 
-Time to move onto [the instructions for Exercise005](./docs/Exercise005.md).
+Time to move onto [the instructions for Exercise005](./Exercise005.md).
